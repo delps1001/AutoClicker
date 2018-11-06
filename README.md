@@ -1,5 +1,5 @@
 # AutoClicker
-Configurable Auto Clicker
+Configurable Auto Clicker  
 To build and run locally (requires java JDK installed):
 
 Windows:
