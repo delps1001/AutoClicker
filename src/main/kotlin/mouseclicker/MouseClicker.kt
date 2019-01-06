@@ -53,17 +53,25 @@ class MouseClicker {
         }
     }
 
+    private fun spamClick() {
+        while(true) {
+            clickMouse()
+            robot.delay(25)
+        }
+    }
+
     private fun doClickingAction(input: String) {
         robot.delay(5000)
         when(input) {
             "h" -> humidify()
             "a" -> alchemy()
             "f" -> flickRapidHeal()
+            "s" -> spamClick()
         }
     }
 
     private fun getUserInput(): String {
-        println("Would you like to do alchemy(a), humidify(h), or flickRapidHeal(f)?")
+        println("Would you like to do alchemy(a), humidify(h), spamClick(s), or flickRapidHeal(f)?")
         return readLine().toString()
     }
 
