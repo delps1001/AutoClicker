@@ -61,13 +61,26 @@ class MouseClicker {
     }
 
     private fun doClickingAction(input: String) {
-        robot.delay(5000)
+        startUpDelay()
         when(input) {
             "h" -> humidify()
             "a" -> alchemy()
             "f" -> flickRapidHeal()
             "s" -> spamClick()
         }
+    }
+
+    private fun startUpDelay() {
+        println("5...")
+        robot.delay(1000)
+        println("4...")
+        robot.delay(1000)
+        println("3...")
+        robot.delay(1000)
+        println("2...")
+        robot.delay(1000)
+        println("1...")
+        robot.delay(1000)
     }
 
     private fun getUserInput(): String {
